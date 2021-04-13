@@ -6,8 +6,8 @@ html {
 /* Body */
 body {
 	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
-    opacity: 1; /* This and transition affect the page loading fade in effect */
-    transition: 3s opacity; /* This causes a 3 second fade in, you can change this time if you choose */
+  opacity: 1; /* This and transition affect the page loading fade in effect */
+  transition: 3s opacity; /* This causes a 3 second fade in, you can change this time if you choose */
 	letter-spacing: .2vw;
 	font-family: Avant Garde, Helvetica; 
 	font-size: 1.5vw;
@@ -28,9 +28,9 @@ body.fade-out {
 	top: 0; /* This ensures no space is displayed above the navbar */
 	width: 100%; /* This makes the navbar span the entire width of the page */
 	z-index: 1; /*This ensures other elements don't display over the navbar */
-    position: fixed;
+  position: fixed;
 	-webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
-    animation: moveNav 5s;
+  animation: moveNav 5s;
 }
 
 /* Navbar text */
@@ -43,9 +43,9 @@ body.fade-out {
 	font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
 	font-size: 1.5vw; /* This specifies the font size for text on our navbar */
 	text-align: center; /* This centers the text within its container */
-    position: relative;
+  position: relative;
 	-webkit-animation: movenavText 5.75s; /* Safari 4.0 - 8.0 */
-    animation: movenavText 5.75s;
+  animation: movenavText 5.75s;
 	letter-spacing: .2vw;
 }
 
@@ -112,9 +112,9 @@ body.fade-out {
 	padding-top: .1vh; /* This adds padding around the text so that the background goes slightly beyond the text */
 	padding-bottom: 1vh;
 	margin-top: 23%;
-    position: relative;
+  position: relative;
 	-webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
-    animation: movevideoText 4s;
+  animation: movevideoText 4s;
 }
 
 /* Slideshow Styling */
@@ -245,7 +245,6 @@ body.fade-out {
 }
 
 .Column_1 {
-  font-size: small;
 	float: left;  
 	width: 50%; /* This ensures one column takes up half the page width */
 	padding: 1.6%; 
@@ -275,6 +274,7 @@ h1 {
 	margin-top: 3%; /* We are adding a small margin above the headings */
 	color: #1a1a1a;
 }
+
 
 /* Paragraph elements */
 p {
@@ -310,10 +310,10 @@ q {
 /* Image elements */
 img {
 	filter: grayscale(50%); /* This rids our pictures of 75% of their color */
-    border-radius: 8px; /* This causes our images to have slightly rounded edges */
-    max-width: 100%; 
+  border-radius: 8px; /* This causes our images to have slightly rounded edges */
+  max-width: 100%; 
 	height: 100%;
-    margin: auto auto auto auto;
+  margin: auto auto auto auto;
 	display: block;	/* By specifying block display we can ensure our images are able to be centered */
 }
 
@@ -325,7 +325,7 @@ center:hover {
 
 /* Paragraph element hover effect */
 p:hover {
-    transition: transform 1s;
+  transition: transform 1s;
 	transform: scale(1.01);
 }
 
@@ -339,7 +339,7 @@ h1:hover {
 /* Image element hover effects */
 img:hover {
 	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
-    transition: transform 1s;
+  transition: transform 1s;
 	transform: scale(1.1);
 }
 
@@ -438,6 +438,7 @@ button:hover, .form-container .btn:hover{
   border-style: solid;
   border-color: black;
 }	
+
 
 /* Footer element */
 footer {
