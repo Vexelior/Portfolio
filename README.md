@@ -1,2 +1,3 @@
-# vexelior.github.io
- My Portfolio
+# My Portfolio
+
+Hosted on GitHub pages, this is my portfolio!
