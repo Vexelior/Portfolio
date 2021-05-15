@@ -49,25 +49,6 @@ body.fade-out {
 	letter-spacing: .2vw;
 }
 
-/* The animation effect for moving the nav bar in from above the top of the screen upon page load */
-@keyframes moveNav {
-  from {left: -100vw;}
-  to {left: 0vw;}
-}
-
-/* The animation effect for moving the nav bar in from above the top of the screen upon page load */
-@keyframes movenavText {
-  from {top: -100vw;}
-  to {top: 0vw;}
-}
-
-
-/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
-@keyframes movevideoText {
-  from {top: -100vw;}
-  to {top: 0px;}
-}
-
 /* Navbar hover effect */
 .Navbar a:hover {
   background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
@@ -81,16 +62,6 @@ body.fade-out {
 /* Navbar home button */
 .Navbar a.active { /* The active selector styles a link */
   background-color: darkgray;  /* This specifies the background color behind the Home button on the navbar */ 
-}
-
-/* This causes the video to zoom out from a zoomed in position upon page load */
-@keyframes zoominoutsinglefeatured {
-    0% {
-        transform: scale(1.5,1.5);
-    }
-    100% {
-        transform: scale(1,1);
-    }
 }
 
 /* Video */
@@ -111,7 +82,7 @@ body.fade-out {
 	width: 100%;
 	padding-top: .1vh; /* This adds padding around the text so that the background goes slightly beyond the text */
 	padding-bottom: 1vh;
-	margin-top: 23%;
+	margin-top: 2.5%;
   position: relative;
 	-webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
   animation: movevideoText 4s;
@@ -120,21 +91,10 @@ body.fade-out {
 /* Slideshow Styling */
 #Slideshow_Background {
   background:rgba(255,255,255, 0.35); /* This creates a slightly transparent white background that's placed over the video */
-  }
-
+}
 
 .mySlides {
 	display: none;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 /* Slideshow section / container */
@@ -144,17 +104,14 @@ body.fade-out {
   padding-top: 4%;
   position: relative;
   margin: auto;
-
 }
 
 /* Images contained within slideshow */
 .Slide_Show_Images {
   vertical-align: middle;
   height: auto;
-  box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
   width: auto;
 }
-
 
 /* Next and previous buttons */
 .Previous, .Next {
@@ -210,7 +167,7 @@ body.fade-out {
   font-size: 1.5vw;
   font-weight: bold;
   display: none;
-  }
+}
 
 /* The dots under the slideshow */
 .dot {
@@ -229,14 +186,6 @@ body.fade-out {
 /* Hover effect for slideshow dots */ 
 .active, .dot:hover {
   background-color: black;
-}
-
-/* Fading animation for slideshow */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;  
 }
 
 /* Table - this section covers the styling of the columns and rows within our table */
@@ -286,6 +235,15 @@ p {
 	padding-right: 1vw;
 }
 
+ul, li{
+  font-family: Perpetua, Rockwell Extra Bold;
+  text-align: justify;
+  letter-spacing: .1vw; /* This expands the text slightly */
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 /* Center align elements - this embraces all centered text */
 center {
 	font-family: Perpetua, Rockwell Extra Bold;
@@ -309,7 +267,6 @@ q {
 
 /* Image elements */
 img {
-	filter: grayscale(50%); /* This rids our pictures of 75% of their color */
   border-radius: 8px; /* This causes our images to have slightly rounded edges */
   max-width: 100%; 
 	height: 100%;
@@ -317,45 +274,17 @@ img {
 	display: block;	/* By specifying block display we can ensure our images are able to be centered */
 }
 
-/* Center align element hover effect */
-center:hover {
-	transition: transform 2s;
-	transform: scale(1.1);
-}
-
-/* Paragraph element hover effect */
-p:hover {
-  transition: transform 1s;
-	transform: scale(1.01);
-}
-
 /* Heading 1 element hover effect */
 h1:hover {
 	color: black;
 	font-weight: normal; /* Makes the text no longer bold when hovered over */ 
-
-}
-
-/* Image element hover effects */
-img:hover {
-	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
-  transition: transform 1s;
-	transform: scale(1.1);
-}
-
-/* Contact form styling */
-
-/* Makes contact form button slide in from right on page load */
-@keyframes movePopup {
-  from {right: -40vw;}
-  to {bottom: 1.75vw;}
 }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .Pop_Up_Button {
   bottom: 1.75vw;
   right: 1.75vw;
-  width: 25vw;  
+  width: 20vw;  
   background-color: white;
   color: black;
   border: solid;
@@ -437,8 +366,16 @@ button:hover, .form-container .btn:hover{
   transition-duration: 1s;
   border-style: solid;
   border-color: black;
-}	
+}
 
+.form-container .submit:hover{
+  color: white;
+  background-color: green;
+  -webkit-transition-duration: 1s; 
+  transition-duration: 1s;
+  border-style: solid;
+  border-color: black;
+}	
 
 /* Footer element */
 footer {

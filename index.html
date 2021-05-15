@@ -1,181 +1,161 @@
 <!DOCTYPE html>
-<html>
-
-<!-- Head -->
+<html lang="en">
+	<!-- Head -->
 	<head>
-		<meta charset="UTF-8">
 		<title>Portfolio - Alexander Sanderson</title>
+		<meta charset="UTF-8">
 		<link rel="icon" type="image/png" href="Images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="./Stylesheet/portfolio.css">
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">>
 	</head>
-		  
-
-<!-- Body -->
-<body class="Background"> 
-
-<!-- Navbar -->
-	<div class="Navbar">
-		<a class="active" href="#Home">Home</a> 
-		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
-		<a href="#About">About</a>
-		<a href="#GitHub">GitHub</a>
-		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
-	</div>
-
-<!-- Home -->
-	<div id="Home">
-		<br> <!-- Breaks inserted to add space between navbar and first heading -->
-		<br>
-		
-<!-- Video -->
-		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-			<source src="./Video/typing.mp4" type="video/mp4">
-			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-		</video>
-	</div>
-
-<!-- Video text --> 
-	<div class="Video_Text"> 
-		<h1 style="color:white;">Alex's Portfolio</h1>
-			<p> 
-			  <strong>
+	<!-- Body -->
+	<body class="Background"> 
+		<!-- Navbar -->
+		<nav class="Navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Slideshow">Slideshow</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#About">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#GitHub">GitHub</a>
+				</li>
+				</ul>
+			</div>
+		</nav>	
+			<!-- Home -->
+			<div id="Home">
+				<!-- Video -->
+				<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+					<source src="./Video/typing.mp4" type="video/mp4">
+					Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+				</video>
+			</div>
+		<!-- Video text --> 
+		<div class="Video_Text"> 
+			<h1 style="color:white;">Alex's Portfolio</h1> 
+				<strong>
 					<center>
 						<p>Since I was a child technology has always been of huge interest to me. Whether it was the newest console, telephone, and most especially the newest hardware for PC to be launched. 
 						<br>
 						<br>
 						Technology has always been a passion of mine and it has applied to my daily life. I thrive in putting my all into my work and then some. Please, feel free to contact me. I am always looking for new opportunities and knowledge to learn and share.
+						</p> 
 					</center>	
-			  </strong>				
-			</p> 
-	</div>
-
-<!-- Slideshow section -->
-  <div id="Slideshow">
-    <div id="Slideshow_Background"> 
-      <div id="Slideshow_Container">
-        
-		<div class="mySlides fade">
-          <div class="Slide_Number">1 / 6</div>
-            <img class="Slide_Show_Images" src="./Images/20210412_170735.jpg" style="width:100%">
-              <div class="text">I'm available to assist you on your project(s)!</div>
-        </div>
-        
-		<div class="mySlides fade">
-          <div class="Slide_Number">2 / 6</div>
-            <img class="Slide_Show_Images" src="./Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, & JavaScript.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="Slide_Number">3 / 6</div>
-            <img class="Slide_Show_Images" src="./Images/Python.png" style="width:100%">
-              <div class="text">The popular programming language, Python.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="Slide_Number">4 / 6</div>
-            <img class="Slide_Show_Images" src="./Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-              <div class="text">C#, .NET Framework, ASP.NET, MVC.</div>
-        </div>
-
-		<div class="mySlides fade">
-	      <div class="Slide_Number">5 / 6</div>
-			<img class="Slide_Show_Images" src="./Images/SQL_and_Database.jpg" style="width:100%">
-              <div class="text">Back end development, databases and SQL.</div>
-			</div>
-
-		<div class="mySlides fade">
-		  <div class="Slide_Number">6 / 6</div>
-			<img class="Slide_Show_Images" src="./Images/computer.jpeg" style="width:100%">
-			  <div class="text"> 
-				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+				</strong>	
+		</div>
+		<!-- Slideshow section -->
+		<div id="Slideshow">
+			<div id="Slideshow_Background"> 
+			<div id="Slideshow_Container">
+			  <div class="mySlides">
+			  <div class="Slide_Number">1 / 6</div>
+				<img class="Slide_Show_Images" src="./Images/Me.jpg" style="width:100%">
+				<div class="text">I'm available to assist you on your projects!</div>
 			  </div>
-	    </div>
-	
-		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+			  <div class="mySlides">
+			  <div class="Slide_Number">2 / 6</div>
+				<img class="Slide_Show_Images" src="./Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+				<div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, & JavaScript.</div>
+			  </div>
+			  <div class="mySlides">
+			  <div class="Slide_Number">3 / 6</div>
+				<img class="Slide_Show_Images" src="./Images/Python.png" style="width:100%">
+				<div class="text">The popular programming language, Python.</div>
+			  </div>
+			  <div class="mySlides">
+			  <div class="Slide_Number">4 / 6</div>
+				<img class="Slide_Show_Images" src="./Images/C_Sharp_and_Dot_NET.png" style="width:100%">
+				<div class="text">C#, .NET Framework, ASP.NET, MVC.</div>
+			  </div>
+			  <div class="mySlides">
+			  <div class="Slide_Number">5 / 6</div>
+				<img class="Slide_Show_Images" src="./Images/SQL_and_Database.jpg" style="width:100%">
+				<div class="text">Back end development, databases and SQL.</div>
+				</div>
+			  <div class="mySlides">
+			  <div class="Slide_Number">6 / 6</div>
+				<img class="Slide_Show_Images" src="./Images/computer.jpeg" style="width:100%">
+				<div class="text"> 
+				  <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+				</div>
+			  </div>
+			  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		  <br>
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			  <span class="dot" onclick="currentSlide(6)"></span> 
+			</div>
+		  </div>
+		<!-- About section -->
+		<div class="Row" id="About"> 
+			<div class="Column_2"> <!-- Left column -->
+			<img src="./Images/programming.gif" alt="Laptop">
+			</div>
 		
-	  </div>
-  <br>
-
-      <div style="text-align:center">
- 
-		<span class="dot" onclick="currentSlide(1)"></span> 
-		<span class="dot" onclick="currentSlide(2)"></span> 
-		<span class="dot" onclick="currentSlide(3)"></span> 
-		<span class="dot" onclick="currentSlide(4)"></span> 
-		<span class="dot" onclick="currentSlide(5)"></span> 
-		<span class="dot" onclick="currentSlide(6)"></span> 
-
-      </div>
-    </div>
-  </div>
-
-
-
-<!-- About section -->
-  <div class="Row" id="About"> 
-	<div class="Column_2"> <!-- Left column -->
-	  <img src="./Images/programming.gif" alt="Laptop">
-	</div>
-  
-	<div class="Column_1"> <!-- Right column -->
-	  <h1><strong><u>About</u></strong></h1>
-	    I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you. Looking forward to it! <a href="#Contact">Contact</a> me below!</p>
-	</div>
-  </div>
-
-<!-- GitHub section -->
-	<div class="Row" id="GitHub">
-		<div class="Column_1"> <!-- Left column -->
-			<h1><strong><u>Recent Projects</u></strong></h1>
-			<ul>
-				<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Live-Project" target="_blank">Python Live Project</a></li>
-				<br>
-				<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Course/tree/main/Assignments/Django_Checkbook" target="_blank">Mock Checkbook Web Application</a></li>
-				<br>
-				<li><a href="https://github.com/Vexelior/The-Tech-Academy-C-Sharp-Course/tree/main/Basic_C%23_Programs/NewsletterAppMVC" target="_blank">Newsletter App</a></li>
-				<br>
-				<li><a href="https://github.com/Vexelior/The-Tech-Academy-C-Sharp-Course/tree/main/Basic_C%23_Programs/TwentyOne" target="_blank">Blackjack App</a></li>
-			</ul>
+			<div class="Column_1"> <!-- Right column -->
+			<h1><strong><u>About</u></strong></h1>
+				<p>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you. Looking forward to it! <a href="#Contact">Contact</a> me below!</p>
+			</div>
 		</div>
-		
-	
-		<div class="Column_2"> <!-- Right column -->
-			<a href="https://github.com/Vexelior" target="_blank"><img src="./Images/github_cool.jpg" alt="GitHub"></a>
+		<!-- GitHub section -->
+		<div class="Row" id="GitHub">
+			<div class="Column_1"> <!-- Left column -->
+				<h1><strong><u>Recent Projects</u></strong></h1>
+				<p>
+				<ul>
+					<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Live-Project" target="_blank">Python Live Project</a></li>
+					<br>
+					<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Course/tree/main/Assignments/Django_Checkbook" target="_blank">Mock Checkbook Web Application</a></li>
+					<br>
+					<li><a href="https://github.com/Vexelior/The-Tech-Academy-C-Sharp-Course/tree/main/Basic_C%23_Programs/NewsletterAppMVC" target="_blank">Newsletter App</a></li>
+					<br>
+					<li><a href="https://github.com/Vexelior/The-Tech-Academy-C-Sharp-Course/tree/main/Basic_C%23_Programs/TwentyOne" target="_blank">Blackjack App</a></li>
+				</ul>
+				</p>
+			</div>
+			<div class="Column_2"> <!-- Right column -->
+				<a href="https://github.com/Vexelior" target="_blank"><img src="./Images/github_cool.jpg" alt="GitHub"></a>
+			</div>
 		</div>
-	</div>
-</div>
-
-<!-- Contact section -->
-  <div id="Contact"> 
-    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-	  <div class="form-popup" id="myForm">
-	    <form action="https://formspree.io/f/xzbkojrz" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-		<h1>Contact</h1>
-			<label for="name"><b>Name*</b></label>
-			  <input type="text" placeholder="Type your name here" name="name" required>
-			<label for="phone"><b>Phone</b></label>
-			  <input type="text" placeholder="Enter your phone number here" name="phone">
-			<label for="email"><b>Email*</b></label>		
-			  <input type="text" placeholder="Type your email address here" name="email" required>
-			<label for="message"><b>Message*</b></label>
-			  <input type="text" placeholder="Type your message here" name="message" required>
- 
-    <button type="submit" class="btn">SUBMIT</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-	    </form>
-	  </div>
-  </div>
-	
-<!-- Footer section -->	
-	<footer>
-	  <p>
-	    <center>Learn Software Development at &copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/" target="_blank">The Tech Academy</a></center><br>
-      </p>
-	</footer>
-
-	<script src="./JS/portfolio.js"></script>
-	
-</body>
+		<!-- Contact section -->
+		<div id="Contact"> 
+			<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+			<div class="form-popup" id="myForm">
+				<form action="https://formspree.io/f/xzbkojrz" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+				<h1>Contact</h1>
+					<label for="name"><b>Name*</b></label>
+					<input type="text" placeholder="Type your name here" name="name" required>
+					<label for="phone"><b>Phone</b></label>
+					<input type="text" placeholder="Enter your phone number here" name="phone">
+					<label for="email"><b>Email*</b></label>		
+					<input type="text" placeholder="Type your email address here" name="email" required>
+					<label for="message"><b>Message*</b></label>
+					<input type="text" placeholder="Type your message here" name="message" required>
+			<button type="submit" class="btn submit">SUBMIT</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+				</form>
+			</div>
+		</div>
+		<!-- Footer section -->	
+		<footer>
+		<p>
+			<center>&copy Alexander Sanderson</center><br>
+		</p>
+		</footer>
+		<script src="./JS/portfolio.js"></script>
+	</body>
 </html>
