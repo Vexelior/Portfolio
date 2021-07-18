@@ -1,12 +1,11 @@
-
-// These functions open and close the contact form 
+//Open the contact form 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
+//Close the contact form
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
-  // this.close(); FIX
 }
 
 // This function covers the slide show

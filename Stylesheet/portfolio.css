@@ -41,7 +41,7 @@ body.fade-out {
 	padding: .75vw 1vw; /* This adds padding around our text */
 	text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
 	font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
-	font-size: 1.5vw; /* This specifies the font size for text on our navbar */
+	font-size: 25px; /* This specifies the font size for text on our navbar */
 	text-align: center; /* This centers the text within its container */
   position: relative;
 	-webkit-animation: movenavText 5.75s; /* Safari 4.0 - 8.0 */
@@ -51,7 +51,7 @@ body.fade-out {
 
 /* Navbar hover effect */
 .Navbar a:hover {
-  background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
+  background-color: gray; /*  This defines the background color that will display when you hover over the text on the navbar */
   color: black; /* This defines the font color that will display when you hover over the text on the navbar */ 
   font-weight: bold; /* This makes the text on the navbar bold when hovered over */
   cursor: pointer;
@@ -229,7 +229,7 @@ p {
 	font-family: Perpetua, Rockwell Extra Bold;
 	text-align: justify;
 	letter-spacing: .1vw; /* This expands the text slightly */
-	font-size: 1.5vw;
+	font-size: 25px;
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
@@ -238,7 +238,7 @@ ul, li{
   font-family: Perpetua, Rockwell Extra Bold;
   text-align: justify;
   letter-spacing: .1vw; /* This expands the text slightly */
-  font-size: 1.5vw;
+  font-size: 25px;
   padding-left: 1vw;
   padding-right: 1vw;
 }
@@ -248,13 +248,14 @@ center {
 	font-family: Perpetua, Rockwell Extra Bold;
 	text-align: center;
 	letter-spacing: .1vw;
-	font-size: 1.5vw;
+	font-size: 25px;
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
 
 /* Anchor elements */
-a {
+#link a {
+  text-decoration: none;
 	color: blue; /* We are ensuring all links are blue */
 }
 
@@ -273,12 +274,18 @@ img {
 	display: block;	/* By specifying block display we can ensure our images are able to be centered */
 }
 
+.github-img {
+  border-radius: 8px;
+  border-color: black;
+  border-style:solid;
+}
+
 /* Button used to open the contact form - fixed at the bottom of the page */
 .Pop_Up_Button {
-  bottom: 1.75vw;
-  right: 1.75vw;
-  width: 20vw;  
-  background-color: white;
+  bottom: 1.25vw;
+  right: 1.25vw;
+  width: 15vw;  
+  background-color: gray;
   color: black;
   border: solid;
   cursor: pointer;
@@ -372,6 +379,8 @@ button:hover, .form-container .btn:hover{
 
 /* Footer element */
 footer {
-	padding: 2%;
-	background-color:white;
+	padding-top: 1%;
+  padding-bottom: 1%;
+	background-color:black;
+  color: white;
 }
