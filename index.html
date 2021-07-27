@@ -7,10 +7,10 @@
 		<link rel="icon" type="image/png" href="Images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="./Stylesheet/portfolio.css">
 		<!-- CSS only -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	</head>
 	<!-- Body -->
-	<body class="Background"> 
+	<body class="Background" id="Home"> 
 		<!-- Navbar -->
 		<nav class="Navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
@@ -31,9 +31,6 @@
 					<a class="nav-link" href="#Home">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#About">About</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="#Projects">Projects</a>
 				</li>
 				<li class="nav-item">
@@ -41,18 +38,17 @@
 				</li>
 				</ul>
 			</div>
-		</nav>	
-			<!-- Home -->
-			<div id="Home">
-				<!-- Video -->
-				<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-					<source src="./Video/typing.mp4" type="video/mp4">
-					Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-				</video>
-			</div>
+		</nav>
+		<!-- Video -->
+		<div>
+			<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+				<source src="./Video/typing.mp4" type="video/mp4">
+				Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+			</video>
+		</div>
 		<!-- Video text --> 
 		<div class="Video_Text"> 
-			<h1 style="color:white;">My Portfolio</h1> 
+			<h1 style="color: white;"><u>My Portfolio</u></h1> 
 				<strong>
 					<center>
 						<p>Hello, and welcome to my portfolio page. My name is Alex Sanderson and I am a software developer. I am a graduate of The Tech Academy where I studied full stack development and worked on many aspects of programming. 
@@ -70,33 +66,28 @@
 			  <div class="mySlides">
 			  <div class="Slide_Number">1 / 6</div>
 				<img class="Slide_Show_Images" src="./Images/Me.jpg" style="width:100%">
-				<div class="text">I'm available to assist you on your projects!</div>
 			  </div>
 			  <div class="mySlides">
 			  <div class="Slide_Number">2 / 6</div>
 				<img class="Slide_Show_Images" src="./Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-				<div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, & JavaScript.</div>
 			  </div>
 			  <div class="mySlides">
 			  <div class="Slide_Number">3 / 6</div>
 				<img class="Slide_Show_Images" src="./Images/Python.png" style="width:100%">
-				<div class="text">The popular programming language, Python.</div>
 			  </div>
 			  <div class="mySlides">
 			  <div class="Slide_Number">4 / 6</div>
 				<img class="Slide_Show_Images" src="./Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-				<div class="text">C#, .NET Framework, ASP.NET, MVC.</div>
 			  </div>
 			  <div class="mySlides">
 			  <div class="Slide_Number">5 / 6</div>
 				<img class="Slide_Show_Images" src="./Images/SQL_and_Database.jpg" style="width:100%">
-				<div class="text">Back end development, databases and SQL.</div>
 				</div>
 			  <div class="mySlides">
 			  <div class="Slide_Number">6 / 6</div>
 				<img class="Slide_Show_Images" src="./Images/computer.jpeg" style="width:100%">
 				<div class="text"> 
-				  <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+				  <a onclick="openForm()" href="#Contact" style="color:white;">Contact</a>
 				</div>
 			  </div>
 			  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -113,7 +104,7 @@
 			</div>
 		  </div>
 		<!-- About section -->
-		<div class="Column_1" id="About"> <!-- Right column -->
+		<div class="Column_1"> <!-- Right column -->
 		<h1><strong><u>About</u></strong></h1>
 		<br>
 			<p>I am a graduate of The Tech Academy’s Software Developer Boot Camp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.</p>

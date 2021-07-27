@@ -9,8 +9,8 @@ body {
   opacity: 1; /* This and transition affect the page loading fade in effect */
   transition: 3s opacity; /* This causes a 3 second fade in, you can change this time if you choose */
 	letter-spacing: .2vw;
-	font-family: Avant Garde, Helvetica; 
-	font-size: 1.5vw;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-weight: 400;
 	
 }
 
@@ -82,7 +82,7 @@ body.fade-out {
 	width: 100%;
 	padding-top: .1vh; /* This adds padding around the text so that the background goes slightly beyond the text */
 	padding-bottom: 1vh;
-	margin-top: 2.5%;
+	margin-top: 3.5%;
   position: relative;
 	-webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
   animation: movevideoText 4s;
@@ -99,7 +99,7 @@ body.fade-out {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-  width: 39.5vw;
+  width: 20.5vw;
   height: auto;
   padding-top: 4%;
   position: relative;
@@ -149,9 +149,8 @@ body.fade-out {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-family: Perpetua, Rockwell Extra Bold;
   letter-spacing: .1vw; 
-  font-size: 1.5vw;
+  font-size: 18px;
   background-color: rgba(0,0,0,0.75);
   font-weight: bold;
   border-radius: 7px 7px 7px 7px;
@@ -162,7 +161,6 @@ body.fade-out {
   color: white;
   position: absolute;
   top: 0;
-  font-family: Perpetua, Rockwell Extra Bold;
   letter-spacing: .1vw; 
   font-size: 1.5vw;
   font-weight: bold;
@@ -218,15 +216,13 @@ body.fade-out {
 /* Heading 1 elements */
 h1 {
 	text-transform: uppercase; /* We are capitalizing our headings */
-	font-family: "Trebuchet MS", Optima; 
 	text-align: center;
 	margin-top: 3%; /* We are adding a small margin above the headings */
-	color: #1a1a1a;
+	color: black;
 }
 
 /* Paragraph elements */
 p {
-	font-family: Perpetua, Rockwell Extra Bold;
 	text-align: justify;
 	letter-spacing: .1vw; /* This expands the text slightly */
 	font-size: 25px;
@@ -235,7 +231,6 @@ p {
 }
 
 ul, li{
-  font-family: Perpetua, Rockwell Extra Bold;
   text-align: justify;
   letter-spacing: .1vw; /* This expands the text slightly */
   font-size: 25px;
@@ -245,7 +240,6 @@ ul, li{
 
 /* Center align elements - this embraces all centered text */
 center {
-	font-family: Perpetua, Rockwell Extra Bold;
 	text-align: center;
 	letter-spacing: .1vw;
 	font-size: 25px;
@@ -318,7 +312,6 @@ img {
   margin: .6vw 0 .6vw 0;
   border: none;
   background: Gainsboro;
-  font-family: Helvetica, Avant Garde;
   font-size: 1vw; 
 }
 
@@ -339,7 +332,6 @@ img {
 
 /* Button styling */
 button {
-  font-family: "Trebuchet MS", Optima; 
   letter-spacing: .3vw; 
   font-size: 1.5vw;
   font-weight: bold;
