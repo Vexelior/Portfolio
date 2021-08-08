@@ -1,165 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Head -->
-	<head>
-		<title>Portfolio - Alexander Sanderson</title>
-		<meta charset="UTF-8">
-		<link rel="icon" type="image/png" href="./Images/favicon.png">
-		<link rel="stylesheet" type="text/css" href="./Stylesheet/portfolio.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-		<script src="https://www.google.com/recaptcha/api.js"></script>
-	</head>
-	<!-- Body -->
-	<body class="Background" id="Home"> 
-		<!-- Navbar -->
-		<nav class="Navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="navbar-brand" href="https://github.com/Vexelior" target="_blank">
-						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-							<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-						</svg>
-					</a>
-					<a class="navbar=brand" href="https://www.linkedin.com/in/asanderson94/" style="color: cornflowerblue;" target="_blank">
-						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-							<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-						</svg>
-					</a>	
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#Home">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#Projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://docs.google.com/document/d/1ErhsDMJKxCu6hdGHtXgJ-qsraPWC1ktkWkoXm51WIR0/edit?usp=sharing" target="_blank">Resume</a>
-				</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- Video -->
-		<div>
-			<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-				<source src="./Video/typing.mp4" type="video/mp4">
-				Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-			</video>
-		</div>
-		<!-- Video text --> 
-		<div class="Video_Text"> 
-			<h1 style="color: white;"><u>My Portfolio</u></h1> 
-				<strong>
-					<center>
-						<p>Hello, and welcome to my portfolio page. My name is Alex Sanderson and I am a software developer. I am a graduate of The Tech Academy where I studied full stack development and worked on many aspects of programming. 
-						<br>
-						<br>
-						Technology has always been a passion of mine and it applies to my daily life. I thrive in putting my all into my work and then some. Please, feel free to contact me. I am always looking for new opportunities and knowledge to learn and share.
-						</p> 
-					</center>
-				</strong>
-				<div>
-					<img class="img-me" src="./Images/Me.jpg" alt="portfolio picture" width="500" height="500">
-				</div>	
-		</div>
-		<!-- Slideshow section -->
-		<div id="Slideshow">
-			<div id="Slideshow_Background">
-				<br>
-				<br>
-			<div>
-				<p style="text-align: center; color: white; font-size: 30px; text-shadow: 2px 2px #000000"><strong>I am trained in these programming languages and architectures!</strong></p>
-			</div>		
-			<div id="Slideshow_Container">
-			  <div class="mySlides">
-			  <div class="Slide_Number">1 / 4</div>
-				<img class="Slide_Show_Images" src="./Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-			  </div>
-			  <div class="mySlides">
-			  <div class="Slide_Number">2 / 4</div>
-				<img class="Slide_Show_Images" src="./Images/Python.png" style="width:100%">
-			  </div>
-			  <div class="mySlides">
-			  <div class="Slide_Number">3 / 4</div>
-				<img class="Slide_Show_Images" src="./Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-			  </div>
-			  <div class="mySlides">
-			  <div class="Slide_Number">4 / 4</div>
-				<img class="Slide_Show_Images" src="./Images/SQL_and_Database.jpg" style="width:100%">
-				</div>
-			  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-			  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-		  <br>
-			<div style="text-align:center;">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
-			  <span class="dot" onclick="currentSlide(4)"></span>  
-			</div>
-		  </div>
-		<!-- About section -->
-		<div class="Column_1"> <!-- Right column -->
-		<h1><strong><u>About</u></strong></h1>
-		<br>
-			<p>I am a graduate of The Tech Academy’s Software Developer Boot Camp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.</p>
-			<p>A couple of months after graduating, I became an instructor at The Tech Academy helping students get through their boot camps and creating brand new software developers.</p>
-		</div>
-		<!-- GitHub section -->
-		<div class="Row" id="Projects">
-			<div class="Column_2"> <!-- Left column -->
-				<h1><strong><u>Recent Projects</u></strong></h1>
-				<br>
-				<ul>
-					<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Live-Project" id="link" target="_blank">OSRS Item Database</a></li>
-					<br>
-					<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Course/tree/main/Assignments/Django_Checkbook" id="link" target="_blank">Mock Checkbook Web Application</a></li>
-					<br>
-					<li><a href="https://github.com/Vexelior/The-Tech-Academy-C-Sharp-Course/tree/main/Basic_C%23_Programs/NewsletterAppMVC" id="link" target="_blank">Newsletter .NET Application</a></li>
-					<br>
-					<li><a href="https://vexelior.github.io/Cowboy-Bebop-Site/" id="link" target="_blank">Cowboy Bebop Fansite</a></li>
-					<br>
-					<li><a href="https://vexelior.github.io/Web-Calculator/" id="link" target="_blank">Web Calculator</a></li>
-					<br>
-					<li><a href="https://vexelior.github.io/Tic-Tac-Toe/" id="link" target="_blank">Tic Tac Toe</a></li>
-					<br>
-					<li><a href="https://github.com/Vexelior/The-Tech-Academy-Python-Course/tree/main/Assignments/File%20Transfer%20Assignment" id="link" target="_blank">File Transfer Application</a></li>
-					<br>
-					<li><a href="https://github.com/Vexelior/C-Sharp-Live-Project" id="link" target="_blank">Theatre Live Project</a></li>
-					<br>
-					<li><a href="https://vexelior.github.io/Pizza-Ordering/" id="link" target="_blank">Mock Pizza Ordering</a></li>
-				</ul>
-			</div>
-			<div class="Column_1" id="GitHub"> <!-- Right column -->
-				<a href="https://github.com/Vexelior" target="_blank"><img src="./Images/github_cool.jpg" alt="GitHub" class="github-img"></a>
-			</div>
-		</div>
-		<!-- Contact section -->
-		<div id="Contact"> 
-			<button onclick="openForm()" class="Pop_Up_Button"> Contact </button>
-			<div class="form-popup" id="myForm">
-				<form action="https://formspree.io/f/xzbkojrz" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-				<h1>Contact</h1>
-					<label for="name"><b>Name*</b></label>
-					<input type="text" placeholder="Name" name="name" required>
-					<label for="phone"><b>Phone</b></label>
-					<input type="text" placeholder="Phone Number" name="phone">
-					<label for="email"><b>Email*</b></label>		
-					<input type="text" placeholder="Email Address" name="email" required>
-					<label for="message"><b>Message*</b></label>
-					<input type="text" placeholder="Message" name="message" required>
-					<div class="g-recaptcha" data-sitekey="6LfOs-QbAAAAAOSTF2ZiQ9pUGNlwPiFZhD1o3SEA"></div>
-			<button type="submit" class="btn submit">Submit</button>
-			<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
-				</form>
-			</div>
-		</div>
-		<!-- Footer section -->	
-		<footer>
-		<p>
-			<center>&copy Alexander Sanderson</center><br>
-		</p>
-		</footer>
-		<script src="./JS/portfolio.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio - Alex Sanderson</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./media/img/favicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container" id="home">
+                <a class="navbar-brand" href="#page-top">My Portfolio</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#social">Social</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://docs.google.com/document/d/1ErhsDMJKxCu6hdGHtXgJ-qsraPWC1ktkWkoXm51WIR0/edit" target="_blank">Resume</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" style="border-radius: 60%; border-style: solid; border-color: white;" src="./media/img/Me.jpg" alt="Profile Picture" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Alex Sanderson</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-user-alt"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Software Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0"><i class="far fa-building"></i> Prosper IT Consulting</p>
+            </div>
+        </header>
+        
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="https://vexelior.github.io/Web-Calculator/" target="_blank"><img class="img-proj img-fluid rounded" src="./media/img/calculator.jpeg" alt="..."/></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="https://vexelior.github.io/Tic-Tac-Toe/" id="link" target="_blank"><img class="img-proj img-fluid rounded" src="./media/img/tictactoe.jpg" alt="..."/></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="https://github.com/Vexelior/The-Tech-Academy-Python-Course/tree/main/Assignments/Django_Checkbook" id="link" target="_blank"><img class="img-proj img-fluid rounded" src="./media/img/checkbook.jpeg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="https://vexelior.github.io/Cowboy-Bebop-Site/" target="_blank"><img class="img-proj img-fluid rounded" src="./media/img/cb.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="https://vexelior.github.io/Pizza-Ordering/" target="_blank"><img class="img-proj img-fluid rounded" src="./media/img/pizza.jpeg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="https://github.com/Vexelior/The-Tech-Academy-Python-Course/tree/main/Assignments/File%20Transfer%20Assignment" target="_blank"><img class=" img-proj img-fluid rounded" src="./media/img/files.jpeg" alt="..." /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-user-edit"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Hello, and welcome to my portfolio page. My name is Alex Sanderson and I am a software developer. I am a graduate of The Tech Academy where I studied full stack development and worked on many aspects of programming.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Technology has always been a passion of mine and it applies to my daily life. I thrive in putting my all into my work and then some. Please, feel free to contact me. I am always looking for new opportunities and knowledge to learn and share.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- Contact Form-->
+                        <form id="contactForm" action="https://formspree.io/f/xzbkojrz" method="POST">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full Name*</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email Address*</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                                <label for="phone">Phone Number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message*</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!--reCAPTCHA-->
+                            <div class="g-recaptcha" data-sitekey="6LfOs-QbAAAAAOSTF2ZiQ9pUGNlwPiFZhD1o3SEA"></div>
+                            <br>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-2 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"><i class="fas fa-map-marked-alt"></i> Location</h4>
+                        <p class="lead mb-0">
+                            Portland, OR
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4" id="social">Social</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Vexelior" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/asanderson94/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/Vexelior" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://discordapp.com/users/163071144340094978/" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Created using:</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-html5"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-css3-alt"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-js"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-bootstrap"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-font-awesome"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Alexander Sanderson</small></div>
+        </div>
+
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
