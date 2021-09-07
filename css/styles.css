@@ -7795,7 +7795,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: grey !important;
+  background-color: lightslategrey !important;
 }
 
 .bg-secondary {
@@ -11406,6 +11406,10 @@ html {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.img-proj:hover{
+  border: solid 2px lightslategrey;
 }
 .form-floating input.form-control,
 .form-floating textarea.form-control {
