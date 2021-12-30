@@ -11418,8 +11418,11 @@ html {
 }
 
 .img-proj:hover{
-  border: solid 2px lightslategrey;
+  /*make the image shrink slightly*/
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
+
 .form-floating input.form-control,
 .form-floating textarea.form-control {
   font-size: 1.5rem;
