@@ -584,6 +584,7 @@ progress {
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
+
 .blockquote > :last-child {
   margin-bottom: 0;
 }
@@ -594,13 +595,14 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+
 .blockquote-footer::before {
   content: "— ";
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 450px;
+  height: 350px;
 }
 
 .img-thumbnail {
@@ -11484,6 +11486,7 @@ html {
   transition: all 0.2s ease-in-out;
   opacity: 0;
   background-color: grey;
+  margin-bottom: 10px;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
