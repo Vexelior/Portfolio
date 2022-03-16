@@ -11458,6 +11458,24 @@ html {
   width: 15rem;
 }
 
+#contactForm input {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #ced4da;
+  border-style: solid;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #ced4da;
+  border-style: solid;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
