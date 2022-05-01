@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Alex Sanderson - Portfolio" />
+    <meta name="author" content="Alex Sanderson" />
     <title>Portfolio - Alex Sanderson</title>
     <link rel="icon" type="image/x-icon" href="./media/img/favicon.png" />
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -15,7 +14,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -38,7 +36,7 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                             href="#social">Social</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="https://docs.google.com/document/d/1ErhsDMJKxCu6hdGHtXgJ-qsraPWC1ktkWkoXm51WIR0/edit"
+                            href="./media/documents/Alexander Sanderson - Resume.pdf" download
                             target="_blank">Resume</a></li>
                 </ul>
             </div>
@@ -64,7 +62,6 @@
                 IT Consulting</p>
         </div>
     </header>
-
     <!-- Portfolio Section-->
     <section class="page-section portfolio">
         <!-- About Section-->
@@ -84,7 +81,7 @@
                         <p class="lead">
                             Hello, and welcome to my portfolio page! My name is Alex Sanderson and I am a
                             software developer. I am a graduate of The Tech Academy where I studied full stack
-                            development
+                            development consisting of HTML, CSS, JavaScript, SQL, C#,
                             and worked on many aspects of programming.
                         </p>
                     </div>
@@ -98,11 +95,9 @@
                 </div>
             </div>
         </section>
-
         <br>
         <br>
         <br>
-
         <!-- Icon Divider-->
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
         <div class="divider-custom">
@@ -110,10 +105,8 @@
             <div class="divider-custom-icon"><i class="fas fa-project-diagram"></i></div>
             <div class="divider-custom-line"></div>
         </div>
-
         <br>
         <br>
-
         <!-- Portfolio Grid Items-->
         <div class="grid-item-container">
             <div class="container">
@@ -124,7 +117,7 @@
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">Calculator</div>
                             </div></a>
-                            <img class="img-fluid" src="./media/img/calculator.jpeg" alt="calculator-image" />
+                            <img class="img-fluid" src="./media/img/calculator.jpg" alt="calculator-image" />
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -178,7 +171,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section Heading-->
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
     <!-- Icon Divider-->
@@ -187,18 +179,17 @@
         <div class="divider-custom-icon"><i class="fas fa-envelope"></i></div>
         <div class="divider-custom-line"></div>
     </div>
-
     <br>
     <br>
-
     <!-- Contact Section-->
     <section class="page-section bg-primary" id="contact">
-        <div class="container">
+        <div class="container" style="background: #1a252f; padding: 50px; border-radius: 10px; border: solid white 2px">
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
                     <!-- Contact Form-->
                     <form id="contactForm" action="https://formspree.io/f/xzbkojrz" method="POST">
+                        <h2 class="page-section-heading text-center text-uppercase mb-4" style="color: white;"><u>Form</u></h2>
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="name" placeholder="Enter your name..."
@@ -218,29 +209,20 @@
                         <div class="form-floating mb-3">
                             <input class="form-control" name="phone" placeholder="(123) 456-7890" />
                             <label for="phone">Phone Number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" name="message" placeholder="Enter your message here..."
-                                style="border-radius: 10px;
-                                       border-width: 1px;
-                                       border-color: #ced4da;
-                                       border-style: solid;
-                                       padding: 0.5rem;
-                                       margin-bottom: 1rem;
-                                       height: 10rem;" 
-                            data-sb-validations="required"></textarea>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Enter your message..."
+                                data-sb-validations="required" style="border-radius: 10px; overflow-x: hidden; overflow-y: hidden; scroll-behavior: smooth;"></textarea>
                             <label for="message">Message*</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
                         <!--reCAPTCHA-->
                         <div class="g-recaptcha" data-sitekey="6LfOs-QbAAAAAOSTF2ZiQ9pUGNlwPiFZhD1o3SEA"></div>
                         <br>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                        <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Send</button>
                     </form>
                 </div>
             </div>
@@ -254,7 +236,7 @@
                 <div class="col-lg-4 mb-2 mb-lg-0">
                     <h4 class="text-uppercase mb-4"><i class="fas fa-map-marked-alt"></i> Location</h4>
                     <p class="lead mb-0">
-                        Portland, OR
+                        Ridgefield, WA
                     </p>
                 </div>
                 <!-- Footer Social Icons-->
@@ -266,9 +248,6 @@
                         target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/Vexelior"
                         target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://discordapp.com/users/163071144340094978/" target="_blank"><i
-                            class="fab fa-discord"></i></a>
                 </div>
                 <div class="col-lg-4">
                     <h4 class="text-uppercase mb-4">Created using:</h4>
@@ -292,5 +271,4 @@
     </div>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
-
 </html>
