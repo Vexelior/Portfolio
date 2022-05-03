@@ -1,6 +1,6 @@
 /*!
-* Start Bootstrap - Freelancer v7.0.4 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2021 Start Bootstrap
+* Start Bootstrap - Freelancer v7.0.6 (https://startbootstrap.com/theme/freelancer)
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
 */
 //
@@ -32,9 +32,9 @@ window.addEventListener('DOMContentLoaded', event => {
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 72,
+        const mainNavSpy = new window.ScrollSpy(mainNav, {
+            className: 'active',
+            offset: 100
         });
     };
 
