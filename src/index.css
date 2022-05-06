@@ -1,0 +1,21 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: -webkit-linear-gradient(#022c43, #f2f2f2);
+  background: -moz-linear-gradient(#022c43, #f2f2f2);
+  background: -o-linear-gradient(#022c43, #f2f2f2);
+  background: linear-gradient(#022c43, #f2f2f2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  display: block;
+}
