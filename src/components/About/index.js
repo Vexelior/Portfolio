@@ -8,7 +8,6 @@ import {
   faJava,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
-import Spinner from 'react-loader-spinner'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'

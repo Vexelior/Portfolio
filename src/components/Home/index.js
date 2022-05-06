@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+import Me from '../../assets/images/Me.png'
 import './index.scss'
 
 const Home = () => {
@@ -65,9 +65,10 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <div className="logo-container">
+          <img className="solid-logo" src={Me} alt="Developer" />
+        </div>
       </div>
-
       <Loader type="line-scale-pulse-out" />
     </>
   )
