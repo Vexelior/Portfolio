@@ -28,17 +28,17 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e', '.']}
               idx={15}
             />
           </h1>
           <p>
-            I'm very ambitious software developer looking for a role in
+            I'm a very ambitious software developer looking for a role in a well
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
-            I am a graduate of The Tech Academy where I studied full stack development consisting of HTML, CSS, JavaScript, SQL, C#, and worked on many aspects of programming with Java as well.
+            I am a graduate of The Tech Academy where I studied Full Stack Development and Cyber Security consisting of HTML, CSS, JavaScript, SQL, C#, Java and worked on a multitude of different aspects of programming.
           </p>
           <p>
             Technology has always been a passion of mine and it applies to my daily life. I thrive in putting my all into my work and then some. Please, feel free to contact me. I am always looking for new opportunities and knowledge to learn and share.

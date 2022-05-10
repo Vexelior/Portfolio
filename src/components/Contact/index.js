@@ -44,13 +44,13 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e', '.']}
               idx={15}
             />
           </h1>
           <p>
             I am interested in opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
+            large projects. If you have other request or questions, please
             don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
