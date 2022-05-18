@@ -6,11 +6,13 @@ import {
   faHtml5,
   faJsSquare,
   faJava,
+  faPython,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { faC, faCode } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,7 +25,7 @@ const About = () => {
 
   return (
     <>
-      <div className="container about-page">
+      <div className="myContainer about-page">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -38,7 +40,7 @@ const About = () => {
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
-            I am a graduate of The Tech Academy where I studied Full Stack Development and Cyber Security consisting of HTML, CSS, JavaScript, SQL, C#, Java and worked on a multitude of different aspects of programming.
+            I am a graduate of The Tech Academy where I studied Full Stack Development and Cyber Security consisting of HTML, CSS, JavaScript, SQL, C#, Java and studied methods of programming.
           </p>
           <p>
             Technology has always been a passion of mine and it applies to my daily life. I thrive in putting my all into my work and then some. Please, feel free to contact me. I am always looking for new opportunities and knowledge to learn and share.
@@ -51,10 +53,10 @@ const About = () => {
               <FontAwesomeIcon icon={faReact} color="#DD0031" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+              <FontAwesomeIcon icon={faPython} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faCode} color="#28A4D9" />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faJava} color="#5ED4F4" />

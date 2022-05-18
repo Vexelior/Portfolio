@@ -23,7 +23,7 @@
   margin-left: -20px;
 }
 
-.container {
+.myContainer {
   width: 100%;
   will-change: contents;
   height: 90%;
@@ -38,8 +38,8 @@
   animation-delay: 1s;
 }
 
-.container.contact-page,
-.container.about-page {
+.myContainer.contact-page,
+.myContainer.about-page {
   .text-zone {
     position: absolute;
     left: 10%;
