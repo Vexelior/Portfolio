@@ -15,41 +15,40 @@ const Projects = () => {
     }, 3000)
   }, [])
 
-  // Project details array
   const projects = [
-    {
+  {
     name: 'Simon Says',
-    description: 'A simple Simon Says game built with HTML, CSS, & JavaScript.',
+    description: 'Simon Says game built with HTML, CSS, jQuery, & Vanilla JavaScript.',
     link: 'https://www.alexsandersontech.com/Simon-Says/',
     github: 'https://github.com/Vexelior/Simon-Says'
   },
   {
     name: 'Tic Tac Toe',
-    description: 'A simple Tic Tac Toe game built with HTML, CSS, & JavaScript.',
+    description: 'Tic Tac Toe game built with HTML, CSS, & JavaScript.',
     link: 'https://www.alexsandersontech.com/Tic-Tac-Toe/',
     github: 'https://github.com/Vexelior/Tic-Tac-Toe'
   },
   {
-    name: 'Pong',
-    description: 'A simple Pong game built with HTML, CSS, & JavaScript.',
-    link: 'https://www.alexsandersontech.com/Pong/',
+    name: 'Block Destroyer',
+    description: 'Block Destroyer game built with HTML, CSS, & JavaScript.',
+    link: 'https://www.alexsandersontech.com/Pong-Game/',
     github: 'https://github.com/Vexelior/Pong-Game'
   },
   {
     name: 'Weather App',
-    description: 'A simple weather app built with HTML, CSS, & JavaScript.',
+    description: 'Weather app built with HTML, CSS, JavaScript, & APIs.',
     link: 'https://www.alexsandersontech.com/Weather-API/',
     github: 'https://github.com/Vexelior/Weather-API'
   },
   {
     name: 'Calculator',
-    description: 'A simple calculator built with HTML, CSS, & JavaScript.',
+    description: 'A calculator built with HTML, CSS, & JavaScript.',
     link: 'https://www.alexsandersontech.com/Web-Calculator/',
     github: 'https://github.com/Vexelior/Web-Calculator/'
   },
   {
     name: 'Cowboy Bebop Fansite',
-    description: 'A simple fansite for the popular anime Cowboy Bebop.',
+    description: 'A mock simple fansite for the popular anime Cowboy Bebop.',
     link: 'https://www.alexsandersontech.com/Cowboy-Bebop-Site/',
     github: 'https://github.com/Vexelior/Cowboy-Bebop-Site'
   }
@@ -57,12 +56,12 @@ const Projects = () => {
 
   return (
     <>
-      <div className='myContainer about-page'>
+      <div className='myContainer projects-page'>
         <div className='text-zone'>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+              strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's', '.']}
               idx={15}
             />
           </h1>
@@ -75,31 +74,29 @@ const Projects = () => {
         </div>
         <div className='projects-container'>
           {projects.map((project, idx) => (
-          <div className='accordion accordion-flush' id='accordionId' key={idx}>
-            <div className='accordion-item'>
-              <h2 className='accordion-header' id='accordionHeading'>
-                <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='accordionId' aria-expanded='false' aria-controls='collapseContent'>
-                  {project.name}
-                </button>
-              </h2>
-              <div id='collapseContent' className='accordion-collapse collapse' aria-labelledby='accordionHeading' data-bs-parent='accordionId'>
-                <div className='accordion-body'>
-                  <p>{project.description}</p>
-                    <div className='project-links'>
-                      <a href={project.link} target='_blank' rel='noopener noreferrer'>
-                        <FontAwesomeIcon icon={faGlobe} />
-                      </a>
-                      <a href={project.github} target='_blank' rel='noopener noreferrer'>
-                        <FontAwesomeIcon icon={faGithub} />
-                      </a>
-                    </div>
+            <div className='accordion accordion-flush accordion-content accordion-content.in' key={idx}>
+              <div className='card color-change'>
+                <div className='card-header' id={`heading${idx}`}>
+                  <h2 className='mb-2'>
+                    {project.name}
+                  </h2>
+                  <div id='project-description'>
+                    <p>{project.description}</p>
+                  </div>
+                  <div className='project-links'>
+                    <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                      <FontAwesomeIcon icon={faGlobe} />
+                    </a>
+                    <a href={project.github} target='_blank' rel='noopener noreferrer'>
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-    </div>
+      </div>
       <Loader type='line-scale-pulse-out' />
     </>
   )

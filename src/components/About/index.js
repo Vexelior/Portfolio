@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
   faReact,
-  faCss3,
   faGitAlt,
-  faHtml5,
   faJsSquare,
   faJava,
   faPython,
@@ -12,7 +10,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
-import { faC, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -35,15 +33,15 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious software developer looking for a role in a well
+            I am a very ambitious software developer looking for a role in a well
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
-            I am a graduate of The Tech Academy where I studied Full Stack Development and Cyber Security consisting of HTML, CSS, JavaScript, SQL, C#, Java and studied methods of programming.
+            I am a graduate of The Tech Academy where I studied Full Stack Development and Cyber Security consisting of HTML, CSS, JavaScript, SQL, C#, Java, Front-End Development, Back-End Development, and Network Security. 
           </p>
           <p>
-            Technology has always been a passion of mine and it applies to my daily life. I thrive in putting my all into my work and then some. Please, feel free to contact me. I am always looking for new opportunities and knowledge to learn and share.
+            Technology has always been a passion of mine and it applies to my daily life. I thrive in putting my all into my work and creating a product I can be proud of. Please, feel free to contact me. I am always looking for new opportunities and knowledge to both learn and share with others.
           </p>
         </div>
 

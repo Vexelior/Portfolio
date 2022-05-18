@@ -49,9 +49,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in opportunities - especially ambitious or
-            large projects. If you have other request or questions, please
-            don't hesitate to contact me using below form either.
+            I am interested in new opportunities - especially ambitious,
+            large projects. If you have any other request or questions, please
+            don't hesitate to contact me using the form below.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -90,7 +90,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[45.81558251726711, -122.74293451020631]} zoom={15}>
+          <MapContainer center={[45.81558251726711, -122.74293451020631]} zoom={9}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[45.81558251726711, -122.74293451020631]}></Marker>
           </MapContainer>
