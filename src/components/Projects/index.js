@@ -31,8 +31,8 @@ const Projects = () => {
   {
     name: 'Block Destroyer',
     description: 'Block Destroyer game built with HTML, CSS, & JavaScript.',
-    link: 'https://www.alexsandersontech.com/Pong-Game/',
-    github: 'https://github.com/Vexelior/Pong-Game'
+    link: 'https://www.alexsandersontech.com/Block-Destroyer/',
+    github: 'https://github.com/Vexelior/Block-Destroyer'
   },
   {
     name: 'Weather App',
