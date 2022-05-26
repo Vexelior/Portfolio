@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
-import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -57,7 +56,7 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="from_name" required />
                 </li>
                 <li className="half">
                   <input
