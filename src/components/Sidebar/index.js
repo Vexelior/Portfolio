@@ -29,9 +29,9 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} />
         </NavLink>
         
-        <NavLink activeclassname="active" className="resume-link" to={Resume} target="_blank" download>
+        <a activeclassname="active" className="resume-link" href={Resume} target="_blank" rel='noreferrer' download>
           <FontAwesomeIcon icon={faCopy}  />
-        </NavLink>
+        </a>
       </nav>
       <ul>
         <li>
