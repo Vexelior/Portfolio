@@ -19,37 +19,37 @@ const Projects = () => {
   {
     name: 'Simon Says',
     description: 'Simon Says game built with HTML, CSS, jQuery, & Vanilla JavaScript.',
-    link: 'https://www.alexsandersontech.com/Simon-Says/',
+    link: 'https://vexelior.github.io/Simon-Says/',
     github: 'https://github.com/Vexelior/Simon-Says'
   },
   {
     name: 'Tic Tac Toe',
     description: 'Tic Tac Toe game built with HTML, CSS, & JavaScript.',
-    link: 'https://www.alexsandersontech.com/Tic-Tac-Toe/',
+    link: 'https://vexelior.github.io/Tic-Tac-Toe/',
     github: 'https://github.com/Vexelior/Tic-Tac-Toe'
   },
   {
     name: 'Block Destroyer',
     description: 'Block Destroyer game built with HTML, CSS, & JavaScript.',
-    link: 'https://www.alexsandersontech.com/Block-Destroyer/',
+    link: 'https://vexelior.github.io/Block-Destroyer/',
     github: 'https://github.com/Vexelior/Block-Destroyer'
   },
   {
     name: 'Weather App',
     description: 'Weather app built with HTML, CSS, JavaScript, & APIs.',
-    link: 'https://www.alexsandersontech.com/Weather-API/',
+    link: 'https://vexelior.github.io/Weather-API/',
     github: 'https://github.com/Vexelior/Weather-API'
   },
   {
     name: 'Calculator',
     description: 'A calculator built with HTML, CSS, & JavaScript.',
-    link: 'https://www.alexsandersontech.com/Web-Calculator/',
+    link: 'https://vexelior.github.io/Web-Calculator/',
     github: 'https://github.com/Vexelior/Web-Calculator/'
   },
   {
     name: 'Cowboy Bebop Fansite',
     description: 'A mock simple fansite for the popular anime Cowboy Bebop.',
-    link: 'https://www.alexsandersontech.com/Cowboy-Bebop-Site/',
+    link: 'https://vexelior.github.io/Cowboy-Bebop-Site/',
     github: 'https://github.com/Vexelior/Cowboy-Bebop-Site'
   }
 ];
