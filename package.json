@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio-website",
   "version": "0.1.0",
-  "homepage": "https://vexelior.github.io/",
+  "homepage": "https://www.alexsandersontech.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
