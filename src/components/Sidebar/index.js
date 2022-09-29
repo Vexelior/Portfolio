@@ -17,10 +17,6 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faUser} />
         </NavLink>
 
-        <NavLink activeclassname="active" className="projects-link" to="/projects">
-          <FontAwesomeIcon icon={faPuzzlePiece} />
-        </NavLink>
-
         <NavLink
           activeclassname="active"
           className="contact-link"
