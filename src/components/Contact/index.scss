@@ -126,3 +126,24 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .contact-form {
+    ul {
+      li {
+        margin-bottom: 5px;
+      }
+
+      li.half {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        clear: both;
+      }
+    }
+  }
+
+  .map-wrap {
+    display: none;
+  }
+}
