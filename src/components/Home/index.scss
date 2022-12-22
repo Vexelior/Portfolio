@@ -105,4 +105,118 @@
   }
 }
 
+/* Make the homepage mobile responsive */
+@media screen and (max-width: 768px) {
+  .home-page {
+    .text-zone {
+      position: relative;
+      left: auto;
+      top: auto;
+      transform: none;
+      width: 100%;
+      max-height: 100%;
+      text-align: center;
+      margin-top: 5px;
+    }
 
+    h1 {
+      font-size: 36px;
+      line-height: 33px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+      &:before {
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+
+      &:after {
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+
+      img {
+        margin-left: 20px;
+        opacity: 0;
+        width: 32px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
+
+    h2 {
+      color: black;
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 24px;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+      padding: 1px;
+    }
+
+    .flat-button {
+      color: white;
+      background: #333;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid white;
+      animation: fadeInAnimation 1s 1.8s backwards;
+      white-space: nowrap;
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      position: relative;
+      float: none;
+      width: 200px;
+
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+    }
+
+    .logo-container {
+      width: 365px;
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+
+    .solid-logo {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      margin: auto;
+      width: auto;
+      height: auto;
+      border-radius: 200px;
+      box-shadow: 5px 7px 12px black;
+      animation: fadeIn 3s 2s backwards;
+      margin-top: 40px;
+    }
+  }
+}
