@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  overflow: scroll;
 }
 
 .top-tags {
@@ -83,6 +84,7 @@
         margin-left: 20px;
         opacity: 0.6;
       }
+      overflow: scroll;
     }
 
     p {
@@ -107,6 +109,38 @@
   .text-animate-hover {
     &:hover {
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .myContainer.home-page,
+  .myContainer.contact-page,
+  .myContainer.about-page {
+    .text-zone {
+      width: 100%;
+      left: 0;
+      top: 0;
+      transform: translateY(0);
+      text-align: center;
+      padding: 0 20px;
+      overflow: scroll;
+      h1 {
+        font-size: 40px;
+        &:before {
+          font-size: 14px;
+          left: 0;
+        }
+        &:after {
+          font-size: 14px;
+          left: 0;
+          bottom: -10px;
+        }
+      }
+      p {
+        font-size: 18px;
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+      }
     }
   }
 }
