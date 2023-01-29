@@ -6,6 +6,7 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    font-family: 'Coolvetica';
   }
 
   h1 {
@@ -51,22 +52,28 @@
     color: black;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 14px;
-    font-family: sans-serif;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+
+    &:hover {
+      color:#ffd700;
+      cursor: default;
+    }
   }
 
   .flat-button {
     color: white;
     background: #333;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 4px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     padding: 10px 18px;
     border: 1px solid white;
+    border-radius: 5px;
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
@@ -75,6 +82,7 @@
     &:hover {
       background: #ffd700;
       color: #333;
+      border: 1px solid #333;
     }
   }
 
@@ -99,7 +107,6 @@
       height: auto;
       border-radius: 200px;
       box-shadow: 5px 7px 12px black;
-      /* Fade in */
       animation: fadeIn 3s 2s backwards;      
     }
   }
@@ -107,7 +114,8 @@
 
 /* Make the homepage mobile responsive */
 @media screen and (max-width: 768px) {
-  .home-page {
+  .home-page {    
+    overflow: hidden;
     .text-zone {
       position: relative;
       left: auto;
@@ -161,11 +169,15 @@
       color: black;
       margin-top: 40px;
       font-weight: 400;
-      font-size: 24px;
-      font-family: sans-serif;
+      font-size: 17px;
+      font-family: 'Roboto', sans-serif;
       letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
       padding: 1px;
+
+      &:hover {
+        color:#ffd700;
+        cursor: default;}
     }
 
     .flat-button {
@@ -174,7 +186,7 @@
       font-size: 13px;
       font-weight: 400;
       letter-spacing: 4px;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       text-decoration: none;
       padding: 10px 18px;
       border: 1px solid white;
@@ -194,7 +206,6 @@
     }
 
     .logo-container {
-      width: 365px;
       position: relative;
       top: auto;
       right: auto;
@@ -202,21 +213,22 @@
       left: auto;
       margin: 0 auto;
       margin-top: 40px;
+
+      .solid-logo {
+        position: absolute;
+        margin: auto;
+        width: 250px;
+        height: 250px;
+        /* Center the logo in the parent container*/
+        top: 0;
+        right: 20px;
+        left: 0;
+        border-radius: 200px;
+        box-shadow: 5px 7px 12px black;
+        animation: fadeIn 3s 2s backwards;
+      }
     }
 
-    .solid-logo {
-      position: relative;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: auto;
-      margin: auto;
-      width: auto;
-      height: auto;
-      border-radius: 200px;
-      box-shadow: 5px 7px 12px black;
-      animation: fadeIn 3s 2s backwards;
-      margin-top: 40px;
-    }
+
   }
 }

@@ -57,19 +57,28 @@
   }
 
   .flat-button {
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
+    color: white;
+    background: #333;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-family: sans-serif;
     text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px;
+    padding: 10px 18px;
+    border: 1px solid white;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1px;
+    position: relative;
+    float: none;
+    width: 200px;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
   }
 }
 

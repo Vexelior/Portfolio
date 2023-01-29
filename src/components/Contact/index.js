@@ -25,16 +25,14 @@ const Contact = () => {
         form.current,
         'xWxrXWIab1mK8J139'
       )
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
+      .then((result) => {
+        console.log(result.text)
+        alert('Message sent, thank you!')
+      }, (error) => {
+        console.log(error.text)
+        alert('Something went wrong, please try again later.')
+      });
+  };
 
   return (
     <>
@@ -89,9 +87,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[45.507566, -122.678259]} zoom={9}>
+          <MapContainer center={[45.633331, -122.678259]} zoom={9}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[45.507566, -122.678259]}></Marker>
+            <Marker position={[45.633331, -122.678259]}></Marker>
           </MapContainer>
         </div>
       </div>
