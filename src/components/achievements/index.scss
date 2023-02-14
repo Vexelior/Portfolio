@@ -1,0 +1,22 @@
+/* Create a left and right colum that both take up the entire screen*/
+.left-container {
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.right-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    float: right;
+    padding: 20px;
+}
+
+.certificates {
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+}
