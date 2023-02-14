@@ -1,22 +1,77 @@
+.myContainer.achievements-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #ffd700;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: -10px;
+        
+            &:before {
+                font-family: 'La Belle Aurore', cursive;
+                color: #ffd700;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+              }
+        
+              &:after {
+                font-family: 'La Belle Aurore', cursive;
+                color: #ffd700;
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                margin-left: 20px;
+                opacity: 0.6;
+              }
+        }
+    }
+}
+
 /* Create a left and right colum that both take up the entire screen*/
 .left-container {
     position: absolute;
-    left: 6%;
-    top: 50%;
+    left: 7%;
+    top: 30%;
     float: left;
     padding: 20px;
+    overflow: hidden;
 }
 
 .right-container {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 56%;
+    top: 30%;
     float: right;
     padding: 20px;
+    overflow: hidden;
 }
 
 .certificates {
     width: 700px;
     height: 500px;
     padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
 }

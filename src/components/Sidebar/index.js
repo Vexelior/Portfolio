@@ -1,7 +1,7 @@
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faCopy } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faCopy, faCertificate } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
 import Resume from '../../assets/documents/Resume.pdf'
 
@@ -26,7 +26,7 @@ const Sidebar = () => {
         </NavLink>
 
         <NavLink activeclassname="active" className="achievements-link" to="/achievements">
-          <FontAwesomeIcon icon={faCopy} />
+          <FontAwesomeIcon icon={faCertificate} />
         </NavLink>
         
         <a activeclassname="active" className="resume-link" href={Resume} target="_blank" rel='noreferrer' download>

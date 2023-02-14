@@ -18,7 +18,7 @@ const Achievements = () => {
 
     return (
         <>
-            <div className="myContainer page achievements-page">
+            <div className="myContainer achievements-page">
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
@@ -29,10 +29,10 @@ const Achievements = () => {
                     </h1>
                 </div>
                 <div className="achievement left-container">
-                        <img className='certificates' src={SoftwareDevCert} alt="software_dev"/>
+                    <img className='certificates' src={SoftwareDevCert} alt="software_dev"/>
                 </div>
                 <div className="achievement right-container">
-                        <img className='certificates' src={CyberSecurityCert} alt="cyber_sec"/>
+                    <img className='certificates' src={CyberSecurityCert} alt="cyber_sec"/>
                 </div>
             </div>
             <Loader type="line-scale-pulse-out" />
