@@ -148,8 +148,8 @@
         text-decoration: none;
         width: calc(100% / 5 - 90px);
         /* Center the icons */
-        margin-left: 65px;
-        margin-right: auto;
+        margin: 30px;
+        margin-top: 0;
 
         i {
           transition: all 0.3s ease-out;

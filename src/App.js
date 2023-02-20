@@ -3,7 +3,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Layout from './components/Layout'
-import Achievements from './components/achievements'
+import Achievements from './components/Achievements'
 import './App.scss'
 
 function App() {

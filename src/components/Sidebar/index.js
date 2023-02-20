@@ -17,16 +17,16 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faUser} />
         </NavLink>
 
+        <NavLink activeclassname="active" className="achievements-link" to="/achievements">
+          <FontAwesomeIcon icon={faCertificate} />
+        </NavLink>
+
         <NavLink
           activeclassname="active"
           className="contact-link"
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} />
-        </NavLink>
-
-        <NavLink activeclassname="active" className="achievements-link" to="/achievements">
-          <FontAwesomeIcon icon={faCertificate} />
         </NavLink>
         
         <a activeclassname="active" className="resume-link" href={Resume} target="_blank" rel='noreferrer' download>
