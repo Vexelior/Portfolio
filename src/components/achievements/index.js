@@ -109,16 +109,18 @@ const Achievements = () => {
                         />
                     </h1>
                 </div>
-                <div className="achievement left-container">
-                    <img className='certificates' src={SoftwareDevCert} alt="software_dev" />
-                    <div className="button-container justify-content-center text-center">
-                        <button type="button" onClick={SoftwareDevCertModal} className="certificate-button" data-bs-toggle="softwareDevModal" data-bs-target="#softwareCert">Software Developer</button>
+                <div className="achievement-container">
+                    <div className="achievement left-container">
+                        <img className='certificates' src={SoftwareDevCert} alt="software_dev" />
+                        <div className="button-container justify-content-center text-center">
+                            <button type="button" onClick={SoftwareDevCertModal} className="certificate-button mt-4" data-bs-toggle="softwareDevModal" data-bs-target="#softwareCert">Software Developer</button>
+                        </div>
                     </div>
-                </div>
-                <div className="achievement right-container">
-                    <img id='cyberCert' className='certificates' src={CyberSecurityCert} alt="cyber_sec" />
-                    <div className="button-container justify-content-center text-center">
-                        <button type="button" onClick={CyberSecurityCertModal} className="certificate-button" data-bs-toggle="cyberModal" data-bs-target="#cyberCert">Cyber Security</button>
+                    <div className="achievement right-container">
+                        <img id='cyberCert' className='certificates' src={CyberSecurityCert} alt="cyber_sec" />
+                        <div className="button-container justify-content-center text-center">
+                            <button type="button" onClick={CyberSecurityCertModal} className="certificate-button mt-4" data-bs-toggle="cyberModal" data-bs-target="#cyberCert">Cyber Security</button>
+                        </div>
                     </div>
                 </div>
             </div>

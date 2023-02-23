@@ -11,10 +11,11 @@ p {
     height: 100vh;
     overflow: hidden;
 
+
     .text-zone {
         position: absolute;
-        left: 10%;
-        top: 30%;
+        left: 41%;
+        top: 12%;
         transform: translateY(-50%);
         width: 35%;
         vertical-align: middle;
@@ -22,7 +23,7 @@ p {
         max-height: 90%;
 
         h1 {
-            font-size: 53px;
+            font-size: 70px;
             font-family: 'Coolvetica';
             color: #ffd700;
             font-weight: 400;
@@ -81,10 +82,7 @@ p {
 .certificates {
     width: 700px;
     height: 500px;
-    padding: 20px;
-    margin: 5px;
-    border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 10px 10px 5px #000000;
 }
 
 .certificate-button {
@@ -106,10 +104,16 @@ p {
       color: #333;
       border: 1px solid #333;
     }
-  }
+}
+
+.achievement-container {
+    position: relative;
+    top: 20%;
+}
 
 @media screen and (max-width: 768px) {
     .myContainer.achievements-page {
+        overflow: scroll;
         .text-zone {
             width: 100%;
             left: 10px;
@@ -117,6 +121,7 @@ p {
             text-align: center;
             h1 {
                 font-size: 40px;
+                text-align: center;
                 &:before {
                     font-size: 14px;
                 }
@@ -137,5 +142,13 @@ p {
     .certificates {
         width: 100%;
         height: 100%;
+    }
+    .achievement-container {
+        position: relative;
+        top: 2%;
+        width: 100%;
+        height: 100%;
+        left: 5px;
+        right: 0;
     }
 }
