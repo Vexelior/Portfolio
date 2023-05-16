@@ -29,7 +29,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} />
         </NavLink>
         
-        <a activeclassname="active" className="resume-link" href={Resume} target="_blank" rel='noreferrer' download>
+        <a activeclassname="active" className="resume-link" href="https://vexelior.github.io/Resume/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faCopy}  />
         </a>
       </nav>
