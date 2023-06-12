@@ -7,21 +7,19 @@
   <title>Software Developer | Alexander Sanderson</title>
   <meta content="Portfolio for Alexander Sanderson, Software Developer, Web Developer, Cyber Security Specialist"
     name="description">
-  <meta content="" name="keywords">
-  <!-- Favicons -->
+  <meta name="keywords" content="Software Developer, Web Developer, Cyber Security Specialist, Alexander Sanderson, Vexelior, asanderson1994s, asanderson94">
+  <!--Favicons-->
   <link href="assets/img/favicon.png" rel="icon">
-  <!-- Google Fonts -->
+  <!--Google Fonts-->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-  <!-- Vendor CSS Files -->
+  <!--Vendor CSS File-->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
+  <!--Template Main CSS File-->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -46,7 +44,6 @@
           <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Projects</span></a>
           </li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
-          <!--Collapsable-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,7 +100,7 @@
       </div>
     </section>
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= Projects Section ======= -->
     <section id="projects" class="portfolio section-bg">
       <div class="container">
         <div class="section-title">
@@ -174,7 +171,7 @@
             <div class="portfolio-wrap project-image" title="Click to view on GitHub">
               <img src="assets/img/projects/secure_password.jpg" class="img-fluid" alt="secure_password">
               <div class="text-center overlay">
-                <a href="https://vexelior.github.io/SecurePassword/">
+                <a href="https://vexelior.github.io/SecurePassword/" target="_blank">
                   <div class="d-flex justify-content-center align-items-center h-100 w-100">
                     <h3 class="text-center">Secure Password Generator</h3>
                   </div>
@@ -235,7 +232,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form method="POST" role="form" class="php-email-form" action="https://formspree.io/f/xzbkojrz">
+            <form method="POST" role="form" id="contact-form" class="php-email-form needs-validation" action="https://formspree.io/f/xzbkojrz">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Name:</label>
@@ -252,14 +249,9 @@
               </div>
               <div class="form-group">
                 <label for="name">Message:</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" id="send-message-button">Send Message</button></div>
             </form>
           </div>
 
@@ -284,19 +276,14 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+  <!--Vendor JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Template Main JS File -->
+  <!--Main JS-->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
