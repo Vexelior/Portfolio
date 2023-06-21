@@ -177,6 +177,8 @@ h6 {
   font-size: 15px;
 }
 
+.dropdown:hover 
+
 .dropdown-menu a {
   color: black !important;
 }

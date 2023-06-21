@@ -158,3 +158,19 @@ form.addEventListener('submit', () => {
     sendMessageButton.innerHTML = `Send Message`;
   } , 3000);
 });
+
+
+// Dropdown menu logic
+const dropdown = document.querySelector('.dropdown');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+dropdown.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('show');
+});
+
+dropdown.addEventListener('mouseover', () => {
+  dropdownMenu.classList.add('show');
+});
+
+dropdown.addEventListener('mouseout', () => {
+  dropdownMenu.classList.remove('show');
+});
