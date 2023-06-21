@@ -163,9 +163,13 @@ form.addEventListener('submit', () => {
 // Dropdown menu logic
 const dropdown = document.querySelector('.dropdown');
 const dropdownMenu = document.querySelector('.dropdown-menu');
-dropdown.addEventListener('mouseover', () => {
-  dropdownMenu.classList.add('show');
+dropdown.addEventListener('click', () => {
+  if (dropdownMenu.classList.contains('show')) {
+    dropdownMenu.classList.remove('show');
+  } else {
+    dropdownMenu.classList.add('show');
+  }
 });
-dropdown.addEventListener('mouseout', () => {
+dropdownMenu.addEventListener('mouseleave', () => {
   dropdownMenu.classList.remove('show');
 });
