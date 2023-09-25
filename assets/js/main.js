@@ -174,6 +174,20 @@ dropdownMenu.addEventListener('mouseleave', () => {
   dropdownMenu.classList.remove('show');
 });
 
+$('#contact-form').on('submit', function(e) {
+  const message = document.getElementById('message').value;
+  const messageContainsLink = message.includes('http://') || message.includes('https://');
+  const htmlTags = /<(.|\n)*?>/g;
+  const javascriptTags = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+  const messageContainsHtmlTags = htmlTags.test(message);
+  const messageContainsJavascriptTags = javascriptTags.test(message);
+  
+  if (messageContainsHtmlTags || messageContainsJavascriptTags || messageContainsLink) {
+    e.preventDefault();
+    alert('Invalid message. Please try again.');
+  }
+});
+
 // Footer year
 const footerYear = document.getElementById('footer-year');
 footerYear.innerHTML = new Date().getFullYear();
