@@ -139,7 +139,7 @@
 })()
 
 // Project image width and height equal to first image
-const projects = document.querySelectorAll('.project-image');
+let projects = document.querySelectorAll('.project-image');
 const firstImage = projects[0].querySelector('img');
 const firstImageWidth = firstImage.clientWidth;
 const firstImageHeight = firstImage.clientHeight;
