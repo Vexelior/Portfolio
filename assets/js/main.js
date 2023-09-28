@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -84,7 +84,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -93,7 +93,7 @@
   /**
    * Scroll with offset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -156,7 +156,7 @@ form.addEventListener('submit', () => {
 
   setTimeout(() => {
     sendMessageButton.innerHTML = `Send Message`;
-  } , 3000);
+  }, 3000);
 });
 
 
@@ -174,17 +174,26 @@ dropdownMenu.addEventListener('mouseleave', () => {
   dropdownMenu.classList.remove('show');
 });
 
-$('#contact-form').on('submit', function(e) {
+$('#contact-form').on('submit', function (e) {
   const message = document.getElementById('message').value;
-  const messageContainsLink = message.includes('http://') || message.includes('https://');
   const htmlTags = /<(.|\n)*?>/g;
   const javascriptTags = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-  const messageContainsHtmlTags = htmlTags.test(message);
-  const messageContainsJavascriptTags = javascriptTags.test(message);
-  
-  if (messageContainsHtmlTags || messageContainsJavascriptTags || messageContainsLink) {
+
+  //Check if the message contains HTML tags, if so, don't send the message
+  if (message.match(htmlTags) || message.match(javascriptTags)) {
     e.preventDefault();
-    alert('Invalid message. Please try again.');
+    alert('There was an error sending your message. Please try again.');
+  }
+  //Check if the message contains a link, if so, don't send the message
+  if (message.includes('http://') ||
+      message.includes('https://') ||
+      message.includes('www.') ||
+      message.includes('.com') ||
+      message.includes('http') ||
+      message.includes('https'))
+       {
+      e.preventDefault();
+      alert('There was an error sending your message. Please try again.');
   }
 });
 
