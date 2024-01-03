@@ -449,6 +449,17 @@ a:hover {
   color: white;
 }
 
+/*--------------------------------------------------------------
+# Achievements
+--------------------------------------------------------------*/
+.achievement-image {
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
