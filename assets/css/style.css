@@ -460,6 +460,23 @@ a:hover {
   text-align: center;
 }
 
+.mobile-image {
+  display: none;
+}
+
+.desktop-image {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-image {
+    display: block;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -504,7 +521,7 @@ a:hover {
   color: #173b6c;
 }
 
-.contact .info .email p {
+.contact .info .email p{
   padding-top: 5px;
 }
 
