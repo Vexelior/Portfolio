@@ -138,16 +138,6 @@
 
 })()
 
-// Project image width and height equal to first image
-let projects = document.querySelectorAll('.project-image');
-const firstImage = projects[0].querySelector('img');
-const firstImageWidth = firstImage.clientWidth;
-const firstImageHeight = firstImage.clientHeight;
-projects.forEach(project => {
-  project.style.width = `${firstImageWidth}px`;
-  project.style.height = `${firstImageHeight}px`;
-});
-
 // Contact form submit button loading
 const form = document.getElementById('contact-form');
 const sendMessageButton = document.getElementById('send-message-button');
@@ -174,6 +164,7 @@ dropdownMenu.addEventListener('mouseleave', () => {
   dropdownMenu.classList.remove('show');
 });
 
+// Contact form validation
 $('#contact-form').on('submit', function (e) {
   const message = document.getElementById('message').value;
   const htmlTags = /<(.|\n)*?>/g;
