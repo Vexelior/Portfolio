@@ -150,19 +150,19 @@ form.addEventListener('submit', () => {
 });
 
 
-// Dropdown menu logic
-const dropdown = document.querySelector('.dropdown');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-dropdown.addEventListener('click', () => {
-  if (dropdownMenu.classList.contains('show')) {
-    dropdownMenu.classList.remove('show');
-  } else {
-    dropdownMenu.classList.add('show');
-  }
-});
-dropdownMenu.addEventListener('mouseleave', () => {
-  dropdownMenu.classList.remove('show');
-});
+// // Dropdown menu logic
+// const dropdown = document.querySelector('.dropdown');
+// const dropdownMenu = document.querySelector('.dropdown-menu');
+// dropdown.addEventListener('click', () => {
+//   if (dropdownMenu.classList.contains('show')) {
+//     dropdownMenu.classList.remove('show');
+//   } else {
+//     dropdownMenu.classList.add('show');
+//   }
+// });
+// dropdownMenu.addEventListener('mouseleave', () => {
+//   dropdownMenu.classList.remove('show');
+// });
 
 // Contact form validation
 $('#contact-form').on('submit', function (e) {
