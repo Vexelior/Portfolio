@@ -188,6 +188,19 @@ $('#contact-form').on('submit', function (e) {
   }
 });
 
+// Project cards
+const projects = document.getElementById('projects');
+const cards = projects.querySelectorAll('.card');
+let maxHeight = 0;
+cards.forEach(card => {
+  if (card.offsetHeight > maxHeight) {
+    maxHeight = card.offsetHeight;
+  }
+});
+cards.forEach(card => {
+  card.style.height = `${maxHeight}px`;
+});
+
 // Footer year
 const footerYear = document.getElementById('footer-year');
 footerYear.innerHTML = new Date().getFullYear();
