@@ -1,5 +1,5 @@
 var nexusConnect = document.getElementById("nexusConnect");
-var clearCast = document.getElementById("clearCast");
+var guardianLock = document.getElementById("guardianLock");
 var clonePilot = document.getElementById("clonePilot");
 var completionCompass = document.getElementById("completionCompass");
 
@@ -26,11 +26,11 @@ getRepoInfo("NexusConnectCRM").then(data => {
 });
 
 // ClearCast
-getRepoInfo("ClearCast").then(data => {
+getRepoInfo("GuardianLock").then(data => {
     var date = new Date(data.pushed_at);
     var dateSplit = date.toLocaleDateString().split("/");
     var dateFormatted = dateSplit[0] + "/" + dateSplit[1] + "/" + dateSplit[2];
-    clearCast.innerHTML = "Updated: " + dateFormatted;
+    guardianLock.innerHTML = "Updated: " + dateFormatted;
 });
 
 // Clone Pilot

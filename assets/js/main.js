@@ -149,20 +149,23 @@ form.addEventListener('submit', () => {
   }, 3000);
 });
 
+// Project card height fix
+const projectsSection = document.getElementById('projects');
+const projectCards = projectsSection.querySelectorAll('.project-card');
 
-// // Dropdown menu logic
-// const dropdown = document.querySelector('.dropdown');
-// const dropdownMenu = document.querySelector('.dropdown-menu');
-// dropdown.addEventListener('click', () => {
-//   if (dropdownMenu.classList.contains('show')) {
-//     dropdownMenu.classList.remove('show');
-//   } else {
-//     dropdownMenu.classList.add('show');
-//   }
-// });
-// dropdownMenu.addEventListener('mouseleave', () => {
-//   dropdownMenu.classList.remove('show');
-// });
+const setCardHeight = () => {
+  let maxHeight = 0;
+  projectCards.forEach(card => {
+    if (card.offsetHeight > maxHeight) {
+      maxHeight = card.offsetHeight;
+    }
+  });
+  projectCards.forEach(card => {
+    card.style.height = `${maxHeight}px`;
+  });
+};
+
+window.addEventListener('load', setCardHeight);
 
 // Contact form validation
 $('#contact-form').on('submit', function (e) {
@@ -177,14 +180,13 @@ $('#contact-form').on('submit', function (e) {
   }
   //Check if the message contains a link, if so, don't send the message
   if (message.includes('http://') ||
-      message.includes('https://') ||
-      message.includes('www.') ||
-      message.includes('.com') ||
-      message.includes('http') ||
-      message.includes('https'))
-       {
-      e.preventDefault();
-      alert('There was an error sending your message. Please try again.');
+    message.includes('https://') ||
+    message.includes('www.') ||
+    message.includes('.com') ||
+    message.includes('http') ||
+    message.includes('https')) {
+    e.preventDefault();
+    alert('There was an error sending your message. Please try again.');
   }
 });
 

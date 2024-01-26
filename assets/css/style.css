@@ -458,6 +458,17 @@ section {
   text-align: center;
 }
 
+.project-card .card-footer {
+  font-size: 12px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .project-card .card-footer {
+    height: auto;
+  }
+}
+
 a {
   color: white;
 }
