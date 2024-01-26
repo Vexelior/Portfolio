@@ -6,7 +6,7 @@ var completionCompass = document.getElementById("completionCompass");
 const url = 'https://api.github.com/repos/Vexelior/';
 const headers = {
     'User-Agent': 'Vexelior',
-    'Authorization': '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'
+    'Authorization': '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'
 };
 
 async function getRepoInfo(repo) {
