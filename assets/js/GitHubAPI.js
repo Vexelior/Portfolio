@@ -2,6 +2,7 @@ var nexusConnect = document.getElementById("nexusConnect");
 var guardianLock = document.getElementById("guardianLock");
 var clonePilot = document.getElementById("clonePilot");
 var completionCompass = document.getElementById("completionCompass");
+var luxeLoft = document.getElementById("luxeLoft");
 
 const url = 'https://api.github.com/repos/Vexelior/';
 const headers = {
@@ -47,4 +48,12 @@ getRepoInfo("CompletionCompass").then(data => {
     var dateSplit = date.toLocaleDateString().split("/");
     var dateFormatted = dateSplit[0] + "/" + dateSplit[1] + "/" + dateSplit[2];
     completionCompass.innerHTML = "Updated: " + dateFormatted;
+});
+
+// Luxe Loft
+getRepoInfo("LuxeLoft").then(data => {
+    var date = new Date(data.pushed_at);
+    var dateSplit = date.toLocaleDateString().split("/");
+    var dateFormatted = dateSplit[0] + "/" + dateSplit[1] + "/" + dateSplit[2];
+    luxeLoft.innerHTML = "Updated: " + dateFormatted;
 });

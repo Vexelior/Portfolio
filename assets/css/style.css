@@ -460,7 +460,7 @@ section {
 
 .project-card .card-footer {
   font-size: 12px;
-  height: 35px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -682,5 +682,20 @@ a:hover {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+
+.card-footer .coding-icon {
+  float: right !important;
+  margin-left: 10px;
+  margin-bottom: auto;
+  font-size: 32px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .coding-icon {
+    float: right;
+    margin-bottom: 5px;
+    text-align: center;
   }
 }
