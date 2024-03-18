@@ -42,14 +42,6 @@ getRepoInfo("ClonePilot").then(data => {
     clonePilot.innerHTML = "Updated: " + dateFormatted;
 });
 
-// Completion Compass
-getRepoInfo("CompletionCompass").then(data => {
-    var date = new Date(data.pushed_at);
-    var dateSplit = date.toLocaleDateString().split("/");
-    var dateFormatted = dateSplit[0] + "/" + dateSplit[1] + "/" + dateSplit[2];
-    completionCompass.innerHTML = "Updated: " + dateFormatted;
-});
-
 // Luxe Loft
 getRepoInfo("LuxeLoft").then(data => {
     var date = new Date(data.pushed_at);

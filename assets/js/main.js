@@ -130,12 +130,6 @@
       mirror: false
     })
   });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
 })()
 
 // Contact form submit button loading
@@ -178,13 +172,10 @@ $('#contact-form').on('submit', function (e) {
     e.preventDefault();
     alert('There was an error sending your message. Please try again.');
   }
+
   //Check if the message contains a link, if so, don't send the message
-  if (message.includes('http://') ||
-    message.includes('https://') ||
-    message.includes('www.') ||
-    message.includes('.com') ||
-    message.includes('http') ||
-    message.includes('https')) {
+  const exclustions = ['http://', 'https://', 'www.', '.com', 'http', 'https', 'http://www.', 'https://www.', 'www.', '.com'];
+  if (exclustions.some(exclustion => message.includes(exclustion))) {
     e.preventDefault();
     alert('There was an error sending your message. Please try again.');
   }
