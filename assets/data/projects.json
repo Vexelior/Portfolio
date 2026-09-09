@@ -1,5 +1,16 @@
 [
   {
+    "name": "Finent",
+    "description": "Finent is a personal-finance and budgeting web app built around your paycheck, not the calendar month. Instead of a flat monthly summary, it organizes your money around each pay period — telling you exactly what's due before your next payday, how much to set aside, and how much is genuinely free to spend.",
+    "html_url": null,
+    "homepage": "https://www.budgetwithfinent.com",
+    "language": "TypeScript",
+    "topics": [],
+    "stargazers_count": 0,
+    "pushed_at": "2026-09-09T01:15:39Z",
+    "private": true
+  },
+  {
     "name": "MetaLens",
     "description": "A small full-stack web app: upload any common image format and get its metadata back",
     "html_url": null,
@@ -8,17 +19,6 @@
     "topics": [],
     "stargazers_count": 0,
     "pushed_at": "2026-09-01T13:34:09Z",
-    "private": true
-  },
-  {
-    "name": "Finent",
-    "description": "Finent is a personal-finance and budgeting web app built around your paycheck, not the calendar month. Instead of a flat monthly summary, it organizes your money around each pay period — telling you exactly what's due before your next payday, how much to set aside, and how much is genuinely free to spend.",
-    "html_url": null,
-    "homepage": "https://www.budgetwithfinent.com",
-    "language": "TypeScript",
-    "topics": [],
-    "stargazers_count": 0,
-    "pushed_at": "2026-09-01T13:33:40Z",
     "private": true
   }
 ]
